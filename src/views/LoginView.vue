@@ -81,7 +81,7 @@ const onSubmit = async () => {
 .login-div {
   width: 350px;
   height: 300px;
-  padding: 0px 30px;
+  padding: 0 30px;
   border: 1px solid #2f2f2f;
   border-radius: 8px;
   text-align: center;
