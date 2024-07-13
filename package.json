@@ -14,7 +14,16 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@eslint/config-array": "^0.17.0",
+    "@eslint/object-schema": "^2.1.4",
+    "axios": "^1.7.2",
+    "element-plus": "^2.7.7",
+    "glob": "^11.0.0",
+    "lru-cache": "^11.0.0",
     "pinia": "^2.1.7",
+    "pinia-plugin-persist": "^1.0.0",
+    "pinia-plugin-persistedstate": "^3.2.1",
+    "rimraf": "^6.0.1",
     "vue": "^3.4.29",
     "vue-router": "^4.3.3"
   },
@@ -35,6 +44,8 @@
     "npm-run-all2": "^6.2.0",
     "prettier": "^3.2.5",
     "typescript": "~5.4.0",
+    "unplugin-auto-import": "^0.18.0",
+    "unplugin-vue-components": "^0.27.2",
     "vite": "^5.3.1",
     "vitest": "^1.6.0",
     "vue-tsc": "^2.0.21"

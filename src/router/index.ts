@@ -1,21 +1,55 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: HomeView
+      name: 'layout',
+      redirect: '/home',
+      component: () => import('@/views/LayoutContainer.vue'),
+      children: [
+        {
+          path: '/home',
+          name: 'home',
+          component: () => import('@/views/HomeView.vue')
+        },
+        {
+          path: '/gridMember',
+          name: 'grid member',
+          component: () => import('@/views/GridMemberMngView.vue')
+        },
+        {
+          path: '/supervisor',
+          name: 'supervisor',
+          component: () => import('@/views/SupervisorMngView.vue')
+        },
+        {
+          path: '/admin',
+          name: 'admin',
+          component: () => import('@/views/AdminMngView.vue')
+        },
+        {
+          path: '/assign',
+          name: 'assign',
+          component: () => import('@/views/AssignMngView.vue')
+        },
+        {
+          path: '/crossDomain',
+          name: 'cross domain',
+          component: () => import('@/views/CrossDomainRequestView.vue')
+        },
+        {
+          path: '/vacation',
+          name: 'vacation',
+          component: () => import('@/views/VacationRequestView.vue')
+        },
+      ]
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
+      path: '/login',
+      name: 'login',
+      component: () => import('@/views/LoginView.vue')
     }
   ]
 })
