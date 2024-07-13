@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import router from '@/router'
+import { useUserStore } from '@/stores'
 const menuItems = [
   { route: '/home', icon: 'House', title: '首页' },
   {
@@ -17,7 +18,7 @@ const menuItems = [
   { route: '/vacation', icon: 'Ship', title: '休假申请' },
 ]
 const logout = () => {
-  // TODO:登出
+  useUserStore().logout()
   router.push('/login')
 }
 </script>
