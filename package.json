@@ -16,6 +16,7 @@
   "dependencies": {
     "@eslint/config-array": "^0.17.0",
     "@eslint/object-schema": "^2.1.4",
+    "@vant/area-data": "^1.5.1",
     "axios": "^1.7.2",
     "element-plus": "^2.7.7",
     "glob": "^11.0.0",
