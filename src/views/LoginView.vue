@@ -3,10 +3,10 @@ import { ref, reactive } from 'vue'
 import type { UserDTO } from '@/api/entities/user'
 import { login } from '@/api'
 import router from '@/router'
-import type { Result } from '@/api/entities/result'
 import { Role } from '@/common/enums'
 import { useUserStore } from '@/stores'
 import { ElMessage } from 'element-plus'
+import { currentUser } from '@/common/testData'
 
 const loginForm = ref({
   username: '',
@@ -32,8 +32,12 @@ const onSubmit = async () => {
     } else {
       ElMessage({ type: 'warning', message: '账号不可用，请联系管理员!' })
     }
-  } catch (e) {
-    ElMessage({ type: 'error', message: (e as Result<any>).message! })
+  } catch (err) {
+    // TODO show error
+    // ElMessage({ type: 'error', message: (err as Result<any>).message! })
+    // 测试数据
+    useUserStore().setUserDTO(currentUser)
+    await router.push('/home')
   }
 }
 </script>
