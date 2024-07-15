@@ -7,7 +7,7 @@ export interface AqiAssignment {
   /**
    * 空气质量监测任务ID，自增主键
    */
-  aa_id: number;
+  aa_id?: number;
   /**
    * 任务区域详细地址
    */
