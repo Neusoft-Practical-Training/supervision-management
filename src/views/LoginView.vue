@@ -33,7 +33,7 @@ const onSubmit = async () => {
       ElMessage({ type: 'warning', message: '账号不可用，请联系管理员!' })
     }
   } catch (err) {
-    console.log('Failed to select login', err)
+    console.log('Failed to login', err)
     useUserStore().setUserDTO(currentUser)
     await router.push('/home')
   }
