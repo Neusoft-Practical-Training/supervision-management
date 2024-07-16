@@ -39,3 +39,21 @@ export enum  TaskCompletedState {
   CrossDomainRequestAccepted = 4,
   CrossDomainRequestCompleted = 5
 }
+
+/**
+ * LeaveRequestState
+ */
+export enum LeaveRequestState {
+  /**
+   * 待审批
+   */
+  Pending = 0,
+  /**
+   * 批准
+   */
+  Approved = 1,
+  /**
+   * 拒绝
+   */
+  Rejected = 2
+}
