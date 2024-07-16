@@ -14,6 +14,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@amap/amap-jsapi-loader": "^1.0.1",
     "@eslint/config-array": "^0.17.0",
     "@eslint/object-schema": "^2.1.4",
     "@vant/area-data": "^1.5.1",
