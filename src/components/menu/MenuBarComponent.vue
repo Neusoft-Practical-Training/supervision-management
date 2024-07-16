@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import router from '@/router'
 import { useUserStore } from '@/stores'
+import { CloseBold } from '@element-plus/icons-vue'
+
 const menuItems = [
   { route: '/home', icon: 'House', title: '首页' },
   {
@@ -15,7 +17,7 @@ const menuItems = [
   },
   { route: '/assign', icon: 'Document', title: '任务指派' },
   { route: '/crossDomain', icon: 'Suitcase', title: '跨域申请' },
-  { route: '/vacation', icon: 'Ship', title: '休假申请' },
+  { route: '/leaveRequest', icon: 'Ship', title: '休假申请' },
 ]
 const logout = () => {
   useUserStore().logout()

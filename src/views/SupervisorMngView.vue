@@ -22,8 +22,7 @@ const statusChange = async (row: UserDTO) => {
       ElMessage.success('已设置该账户状态为' + (row.status ? '可用' : '禁用'))
     }
   } catch (err) {
-    // TODO show error
-    // ElMessage({ type: 'error', message: (err as Result<any>).message! })
+    console.log('Failed to set user status', err)
     ElMessage.success('已设置该账户状态为' + (row.status ? '可用' : '禁用'))
   }
 }
@@ -61,7 +60,7 @@ onBeforeMount(async () => {
   try {
     showData.value = await getSupervisors(user.user_id!)
   } catch (err) {
-    // 测试数据
+    console.log('Failed to get supervisors', err)
     showData.value = supervisors
   }
 })
@@ -73,8 +72,7 @@ const handleQuery = async () => {
       condition: searchCondition.value
     })
   } catch (err) {
-    // TODO show error
-    // ElMessage({ type: 'error', message: (err as Result<any>).message! })
+    console.log('Failed to select supervisors', err)
     query()
   }
 }
@@ -83,7 +81,7 @@ const query = () => {
   showData.value = supervisors.filter((item) => {
     // username
     if (searchCondition.value.name) {
-      if (!item.name.includes(searchCondition.value.name)) {
+      if (!item.name!.includes(searchCondition.value.name)) {
         return false
       }
     }

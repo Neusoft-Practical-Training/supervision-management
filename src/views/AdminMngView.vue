@@ -24,8 +24,7 @@ const statusChange = async (row: UserDTO) => {
       ElMessage.success('已设置该账户状态为' + (row.status ? '可用' : '禁用'))
     }
   } catch (err) {
-    // TODO show error
-    // ElMessage({ type: 'error', message: (err as Result<any>).message! })
+    console.log('Failed to set user status', err)
     ElMessage.success('已设置该账户状态为' + (row.status ? '可用' : '禁用'))
   }
 }
@@ -79,7 +78,7 @@ onBeforeMount(async () => {
   try {
     showData.value = await getAdmins(user.user_id!)
   } catch (err) {
-    // 测试数据
+    console.log('Failed to get admins', err)
     showData.value = jurisdiction.value ? admins : undefined
   }
 })
@@ -91,8 +90,7 @@ const handleQuery = async () => {
       condition: searchCondition.value
     })
   } catch (err) {
-    // TODO show error
-    // ElMessage({ type: 'error', message: (err as Result<any>).message! })
+    console.log('Failed to select admins', err)
     query()
   }
 }
@@ -101,7 +99,7 @@ const query = () => {
   showData.value = admins.filter((item) => {
     // username
     if (searchCondition.value.name) {
-      if (!item.name.includes(searchCondition.value.name)) {
+      if (!item.name!.includes(searchCondition.value.name)) {
         return false
       }
     }
@@ -109,10 +107,10 @@ const query = () => {
     if (searchCondition.value.jurisdiction_id) {
       switch (user.permission) {
         case AdminPermission.State:
-          if (!item.province_id.includes(searchCondition.value.jurisdiction_id)) return false
+          if (!item.province_id!.includes(searchCondition.value.jurisdiction_id)) return false
           break
         case AdminPermission.Province:
-          if (!item.city_id.includes(searchCondition.value.jurisdiction_id)) return false
+          if (!item.city_id!.includes(searchCondition.value.jurisdiction_id)) return false
           break
         case AdminPermission.City: return false
       }

@@ -23,8 +23,7 @@ const statusChange = async (row: UserDTO) => {
       ElMessage.success('已设置该账户状态为' + (row.status ? '可用' : '禁用'))
     }
   } catch (err) {
-    // TODO show error
-    // ElMessage({ type: 'error', message: (err as Result<any>).message! })
+    console.log('Failed to set user status', err)
     ElMessage.success('已设置该账户状态为' + (row.status ? '可用' : '禁用'))
   }
 }
@@ -69,7 +68,7 @@ onBeforeMount(async () => {
   try {
     showData.value = await getGridMembers(user.user_id!)
   } catch (err) {
-    // 测试数据
+    console.log('Failed to get grid members', err)
     showData.value = gridMembers
   }
 })
@@ -81,8 +80,7 @@ const handleQuery = async () => {
       condition: searchCondition.value
     })
   } catch (err) {
-    // TODO show error
-    // ElMessage({ type: 'error', message: (err as Result<any>).message! })
+    console.log('Failed to select grid members', err)
     query()
   }
 }
@@ -91,13 +89,13 @@ const query = () => {
   showData.value = gridMembers.filter((item) => {
     // username
     if (searchCondition.value.name) {
-      if (!item.name.includes(searchCondition.value.name)) {
+      if (!item.name!.includes(searchCondition.value.name)) {
         return false
       }
     }
     // grid
     if (searchCondition.value.grid_id) {
-      if (!item.grid_id.includes(searchCondition.value.grid_id)) {
+      if (!item.grid_id!.includes(searchCondition.value.grid_id)) {
         return false
       }
     }
