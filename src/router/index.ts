@@ -40,9 +40,9 @@ const router = createRouter({
           component: () => import('@/views/CrossDomainRequestView.vue')
         },
         {
-          path: '/vacation',
-          name: 'vacation',
-          component: () => import('@/views/VacationRequestView.vue')
+          path: '/leaveRequest',
+          name: 'leaveRequest',
+          component: () => import('@/views/LeaveRequestView.vue')
         },
       ]
     },
