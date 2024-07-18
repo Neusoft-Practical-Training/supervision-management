@@ -21,7 +21,7 @@ export const formatDate = (date: Date): string => {
   const day = date.getDate();
 
   // 使用模板字符串来格式化，确保月份和日期为两位数
-  return `${year}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`;
+  return `${year}/${month.toString().padStart(2, '0')}/${day.toString().padStart(2, '0')}`;
 }
 
 /**

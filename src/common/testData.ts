@@ -17,7 +17,7 @@ export const currentUser: UserDTO = new class implements UserDTO {
   age: number = 24
   avatar: undefined
   city_id: string = '110100'
-  create_time: string = '2024-5-20'
+  create_time: string = '2024/5/20'
   gender: Gender = Gender.Male
   login_code: string = '13512341234'
   name: string = '王大明'
@@ -27,7 +27,7 @@ export const currentUser: UserDTO = new class implements UserDTO {
   role: Role = Role.Admin
   status: boolean = true
   tel: string = '13512341234'
-  update_time: string = '2024-5-20'
+  update_time: string = '2024/5/20'
   user_id: number = 100
   token: string = '123eghdkqwD'
 }
@@ -38,7 +38,7 @@ export const gridMembers: UserDTO[] = [
     avatar: undefined,
     city_id: '110100',
     grid_id: '110101',
-    create_time: '2023-5-21',
+    create_time: '2023/5/21',
     gender: Gender.Male,
     login_code: '13512341234',
     name: '王小明',
@@ -50,7 +50,7 @@ export const gridMembers: UserDTO[] = [
     status: true,
     task_num: 3,
     tel: '13512341234',
-    update_time: '2023-5-20',
+    update_time: '2023/5/20',
     user_id: 0
   },
   {
@@ -58,7 +58,7 @@ export const gridMembers: UserDTO[] = [
     avatar: undefined,
     city_id: '110100',
     grid_id: '110101',
-    create_time: '2024-5-29',
+    create_time: '2024/5/29',
     gender: Gender.Female,
     login_code: '13512341234',
     name: '王一明',
@@ -70,7 +70,7 @@ export const gridMembers: UserDTO[] = [
     status: true,
     task_num: 3,
     tel: '13512341234',
-    update_time: '2024-5-3',
+    update_time: '2024/5/3',
     user_id: 1
   },
   {
@@ -78,7 +78,7 @@ export const gridMembers: UserDTO[] = [
     avatar: undefined,
     city_id: '110100',
     grid_id: '110101',
-    create_time: '2024-3-20',
+    create_time: '2024/3/20',
     gender: Gender.Unknown,
     login_code: '13512341234',
     name: '王二明',
@@ -90,7 +90,7 @@ export const gridMembers: UserDTO[] = [
     status: true,
     task_num: 3,
     tel: '13512341234',
-    update_time: '2024-3-21',
+    update_time: '2024/3/21',
     user_id: 2
   }
 ]
@@ -99,7 +99,7 @@ export const supervisors: UserDTO[] = [
   {
     age: 52,
     avatar: undefined,
-    create_time: '2024-6-20',
+    create_time: '2024/6/20',
     gender: Gender.Male,
     login_code: '13512341234',
     name: '李小明',
@@ -107,13 +107,13 @@ export const supervisors: UserDTO[] = [
     role: Role.Supervisor,
     status: true,
     tel: '13512341234',
-    update_time: '2024-4-20',
+    update_time: '2024/4/20',
     user_id: 10
   },
   {
     age: 42,
     avatar: undefined,
-    create_time: '2023-12-20',
+    create_time: '2023/12/20',
     gender: Gender.Female,
     login_code: '13512341234',
     name: '李一明',
@@ -121,13 +121,13 @@ export const supervisors: UserDTO[] = [
     role: Role.GridMember,
     status: true,
     tel: '13512341234',
-    update_time: '2024-5-2',
+    update_time: '2024/5/2',
     user_id: 11
   },
   {
     age: 23,
     avatar: undefined,
-    create_time: '2024-5-31',
+    create_time: '2024/5/31',
     gender: Gender.Unknown,
     login_code: '13512341234',
     name: '李二明',
@@ -135,7 +135,7 @@ export const supervisors: UserDTO[] = [
     role: Role.Supervisor,
     status: true,
     tel: '13512341234',
-    update_time: '2024-6-20',
+    update_time: '2024/6/20',
     user_id: 21
   }
 ]
@@ -145,7 +145,7 @@ export const admins: UserDTO[] = [
     age: 31,
     avatar: undefined,
     city_id: '110100',
-    create_time: '2023-5-21',
+    create_time: '2023/5/21',
     gender: Gender.Male,
     login_code: '13512341234',
     name: '张小明',
@@ -155,14 +155,14 @@ export const admins: UserDTO[] = [
     role: Role.Admin,
     status: true,
     tel: '13512341234',
-    update_time: '2023-5-20',
+    update_time: '2023/5/20',
     user_id: 100
   },
   {
     age: 48,
     avatar: undefined,
     city_id: '110100',
-    create_time: '2024-5-29',
+    create_time: '2024/5/29',
     gender: Gender.Female,
     login_code: '13512341234',
     name: '张一明',
@@ -172,14 +172,14 @@ export const admins: UserDTO[] = [
     role: Role.Admin,
     status: true,
     tel: '13512341234',
-    update_time: '2024-5-3',
+    update_time: '2024/5/3',
     user_id: 200
   },
   {
     age: 21,
     avatar: undefined,
     city_id: '110100',
-    create_time: '2024-3-20',
+    create_time: '2024/3/20',
     gender: Gender.Unknown,
     login_code: '13512341234',
     name: '张二明',
@@ -189,7 +189,7 @@ export const admins: UserDTO[] = [
     role: Role.Admin,
     status: true,
     tel: '13512341234',
-    update_time: '2024-3-21',
+    update_time: '2024/3/21',
     user_id: 300
   }
 ]
@@ -202,7 +202,7 @@ export const feedbacks: AqiFeedback[] = [
     address: '安定门东大街 28 号雍和大厦',
     pre_aqi_id: 0,
     explain: '啊就收到了；负我大额度',
-    af_date: '2024-5-30',
+    af_date: '2024/5/30',
     af_time: '12:00',
     state: AqiFeedbackState.Unassigned,
     aa_id: undefined,
@@ -215,7 +215,7 @@ export const feedbacks: AqiFeedback[] = [
     address: '西直门南大街 2 号成铭大厦',
     pre_aqi_id: 0,
     explain: '啊就收到了；负我大额度',
-    af_date: '2024-4-23',
+    af_date: '2024/4/23',
     af_time: '17:00',
     state: AqiFeedbackState.Assigned,
     aa_id: 0,
@@ -228,7 +228,7 @@ export const feedbacks: AqiFeedback[] = [
     address: '北辰东路 8 号北辰时代大厦',
     pre_aqi_id: 0,
     explain: '啊就收到了；负我大额度',
-    af_date: '2024-6-7',
+    af_date: '2024/6/7',
     af_time: '14:00',
     state: AqiFeedbackState.Completed,
     aa_id: 1,
@@ -241,7 +241,7 @@ export const feedbacks: AqiFeedback[] = [
     address: '北京市东城区东直门南大街 1 号来福士中心',
     pre_aqi_id: 1,
     explain: '啊就收到了；负我大额度',
-    af_date: '2024-7-7',
+    af_date: '2024/7/7',
     af_time: '14:00',
     state: AqiFeedbackState.Assigned,
     aa_id: 2,
@@ -254,7 +254,7 @@ export const feedbacks: AqiFeedback[] = [
     address: '北京市朝阳区东三环中路 39 号建外 SOHO',
     pre_aqi_id: 2,
     explain: '阿迪是否违反撒范德萨丰富',
-    af_date: '2024-7-1',
+    af_date: '2024/7/1',
     af_time: '14:00',
     state: AqiFeedbackState.Assigned,
     aa_id: 3,
@@ -267,7 +267,7 @@ export const feedbacks: AqiFeedback[] = [
     address: '北京市朝阳区望京街 9 号望京国际商业中心',
     pre_aqi_id: 2,
     explain: '法教大家发放',
-    af_date: '2024-7-1',
+    af_date: '2024/7/1',
     af_time: '14:00',
     state: AqiFeedbackState.Assigned,
     aa_id: 4,
@@ -280,7 +280,7 @@ export const feedbacks: AqiFeedback[] = [
     address: '北京市朝阳区光华路 9 号天阶大厦',
     pre_aqi_id: 0,
     explain: '法俄发动是非得失飞飞飞飞',
-    af_date: '2024-7-2',
+    af_date: '2024/7/2',
     af_time: '14:00',
     state: AqiFeedbackState.Completed,
     aa_id: 5,
@@ -298,7 +298,7 @@ export const assignments: AqiAssignment[] = [
     gm_id: 0,
     grid_id: '110102',
     address: '西直门南大街 2 号成铭大厦',
-    assign_date: '2024-6-7',
+    assign_date: '2024/6/7',
     assign_time: '13:00',
     cross_domain: false,
     completed: TaskCompletedState.Uncompleted,
@@ -313,7 +313,7 @@ export const assignments: AqiAssignment[] = [
     gm_id: 1,
     grid_id: '110105',
     address: '北辰东路 8 号北辰时代大厦',
-    assign_date: '2024-6-7',
+    assign_date: '2024/6/7',
     assign_time: '13:00',
     cross_domain: false,
     completed: TaskCompletedState.Completed,
@@ -358,7 +358,7 @@ export const assignments: AqiAssignment[] = [
     gm_id: 1,
     grid_id: '110105',
     address: '北京市朝阳区望京街 9 号望京国际商业中心',
-    assign_date: '2024-7-11',
+    assign_date: '2024/7/11',
     assign_time: '13:00',
     cross_domain: true,
     completed: TaskCompletedState.CrossDomainRequestAccepted,
@@ -373,7 +373,7 @@ export const assignments: AqiAssignment[] = [
     gm_id: 2,
     grid_id: '110105',
     address: '北京市朝阳区光华路 9 号天阶大厦',
-    assign_date: '2024-7-11',
+    assign_date: '2024/7/11',
     assign_time: '13:00',
     cross_domain: true,
     completed: TaskCompletedState.CrossDomainRequestCompleted,
@@ -389,7 +389,7 @@ export const confirms: AqiStatistics[] = [
     co_level: 1,
     co_value: 10,
     confirm_aqi_id: 0,
-    confirm_date: '2024-7-10',
+    confirm_date: '2024/7/10',
     confirm_time: '16:00',
     gm_id: 1,
     grid_id: '110105',
@@ -406,7 +406,7 @@ export const confirms: AqiStatistics[] = [
     co_level: 2,
     co_value: 50,
     confirm_aqi_id: 2,
-    confirm_date: '2024-7-10',
+    confirm_date: '2024/7/10',
     confirm_time: '16:00',
     gm_id: 1,
     grid_id: '110105',
@@ -426,13 +426,13 @@ export const leaveRequests: LeaveRequestDTO[] = [
     gender: Gender.Male,
     grid_id: '110101',
     tel: '13509876543',
-    start_time: '2024-07-10T08:00:00Z',
-    end_time: '2024-07-15T17:00:00Z',
+    start_time: '2024/07/10T08:00:00Z',
+    end_time: '2024/07/15T17:00:00Z',
     leave_days: 5,
     reason: '我想出去玩！！！！',
     state: LeaveRequestState.Pending,
-    create_time: '2024-07-01T10:00:00Z',
-    update_time: '2024-07-01T10:00:00Z'
+    create_time: '2024/07/01T10:00:00Z',
+    update_time: '2024/07/01T10:00:00Z'
   },
   {
     request_id: 2,
@@ -441,13 +441,13 @@ export const leaveRequests: LeaveRequestDTO[] = [
     gender: Gender.Female,
     grid_id: '110102',
     tel: '13511112222',
-    start_time: '2024-08-01T09:00:00Z',
-    end_time: '2024-08-10T18:00:00Z',
+    start_time: '2024/08/01T09:00:00Z',
+    end_time: '2024/08/10T18:00:00Z',
     leave_days: 10,
     reason: 'Medical leave',
     state: LeaveRequestState.Approved,
-    create_time: '2024-07-15T12:00:00Z',
-    update_time: '2024-07-16T08:00:00Z'
+    create_time: '2024/07/15T12:00:00Z',
+    update_time: '2024/07/16T08:00:00Z'
   },
   {
     request_id: 3,
@@ -456,13 +456,13 @@ export const leaveRequests: LeaveRequestDTO[] = [
     gender: Gender.Female,
     grid_id: '110101',
     tel: '13512344321',
-    start_time: '2024-07-20T08:00:00Z',
-    end_time: '2024-07-25T17:00:00Z',
+    start_time: '2024/07/20T08:00:00Z',
+    end_time: '2024/07/25T17:00:00Z',
     leave_days: 5,
     reason: 'Personal reasons',
     state: LeaveRequestState.Rejected,
-    create_time: '2024-07-05T11:00:00Z',
-    update_time: '2024-07-10T09:00:00Z'
+    create_time: '2024/07/05T11:00:00Z',
+    update_time: '2024/07/10T09:00:00Z'
   },
   {
     request_id: 4,
@@ -471,13 +471,13 @@ export const leaveRequests: LeaveRequestDTO[] = [
     gender: Gender.Male,
     grid_id: '110102',
     tel: '13512341231',
-    start_time: '2024-09-01T09:00:00Z',
-    end_time: '2024-09-07T17:00:00Z',
+    start_time: '2024/09/01T09:00:00Z',
+    end_time: '2024/09/07T17:00:00Z',
     leave_days: 6,
     reason: 'Conference attendance',
     state: LeaveRequestState.Pending,
-    create_time: '2024-08-20T13:00:00Z',
-    update_time: '2024-08-20T13:00:00Z'
+    create_time: '2024/08/20T13:00:00Z',
+    update_time: '2024/08/20T13:00:00Z'
   },
   {
     request_id: 5,
@@ -486,12 +486,12 @@ export const leaveRequests: LeaveRequestDTO[] = [
     gender: Gender.Male,
     grid_id: '110105',
     tel: '13512341234',
-    start_time: '2024-07-18T08:00:00Z',
-    end_time: '2024-07-19T17:00:00Z',
+    start_time: '2024/07/18T08:00:00Z',
+    end_time: '2024/07/19T17:00:00Z',
     leave_days: 2,
     reason: 'Urgent personal matter',
     state: LeaveRequestState.Pending,
-    create_time: '2024-07-10T09:00:00Z',
-    update_time: '2024-07-10T09:00:00Z'
+    create_time: '2024/07/10T09:00:00Z',
+    update_time: '2024/07/10T09:00:00Z'
   }
 ]
