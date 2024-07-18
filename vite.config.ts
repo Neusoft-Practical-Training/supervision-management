@@ -23,5 +23,9 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
+  },
+  server: {
+    host: '0.0.0.0', // 或者指定具体的IP，如'192.168.1.100'
+    port: 8888
   }
 })
