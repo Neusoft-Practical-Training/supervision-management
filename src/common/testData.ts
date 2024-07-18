@@ -426,13 +426,13 @@ export const leaveRequests: LeaveRequestDTO[] = [
     gender: Gender.Male,
     grid_id: '110101',
     tel: '13509876543',
-    start_time: '2024/07/10T08:00:00Z',
-    end_time: '2024/07/15T17:00:00Z',
+    start_time: '2024/07/10 08:00:00',
+    end_time: '2024/07/15 17:00:00',
     leave_days: 5,
     reason: '我想出去玩！！！！',
     state: LeaveRequestState.Pending,
-    create_time: '2024/07/01T10:00:00Z',
-    update_time: '2024/07/01T10:00:00Z'
+    create_time: '2024/07/01 10:00:00',
+    update_time: '2024/07/01 10:00:00'
   },
   {
     request_id: 2,
@@ -441,13 +441,13 @@ export const leaveRequests: LeaveRequestDTO[] = [
     gender: Gender.Female,
     grid_id: '110102',
     tel: '13511112222',
-    start_time: '2024/08/01T09:00:00Z',
-    end_time: '2024/08/10T18:00:00Z',
+    start_time: '2024/08/01 09:00:00',
+    end_time: '2024/08/10 18:00:00',
     leave_days: 10,
     reason: 'Medical leave',
     state: LeaveRequestState.Approved,
-    create_time: '2024/07/15T12:00:00Z',
-    update_time: '2024/07/16T08:00:00Z'
+    create_time: '2024/07/15 12:00:00',
+    update_time: '2024/07/16 08:00:00'
   },
   {
     request_id: 3,
@@ -456,13 +456,13 @@ export const leaveRequests: LeaveRequestDTO[] = [
     gender: Gender.Female,
     grid_id: '110101',
     tel: '13512344321',
-    start_time: '2024/07/20T08:00:00Z',
-    end_time: '2024/07/25T17:00:00Z',
+    start_time: '2024/07/20 08:00:00',
+    end_time: '2024/07/25 17:00:00',
     leave_days: 5,
     reason: 'Personal reasons',
     state: LeaveRequestState.Rejected,
-    create_time: '2024/07/05T11:00:00Z',
-    update_time: '2024/07/10T09:00:00Z'
+    create_time: '2024/07/05 11:00:00',
+    update_time: '2024/07/10 09:00:00'
   },
   {
     request_id: 4,
@@ -471,13 +471,13 @@ export const leaveRequests: LeaveRequestDTO[] = [
     gender: Gender.Male,
     grid_id: '110102',
     tel: '13512341231',
-    start_time: '2024/09/01T09:00:00Z',
-    end_time: '2024/09/07T17:00:00Z',
+    start_time: '2024/09/01 09:00:00',
+    end_time: '2024/09/07 17:00:00',
     leave_days: 6,
     reason: 'Conference attendance',
     state: LeaveRequestState.Pending,
-    create_time: '2024/08/20T13:00:00Z',
-    update_time: '2024/08/20T13:00:00Z'
+    create_time: '2024/08/20 13:00:00',
+    update_time: '2024/08/20 13:00:00'
   },
   {
     request_id: 5,
@@ -486,12 +486,12 @@ export const leaveRequests: LeaveRequestDTO[] = [
     gender: Gender.Male,
     grid_id: '110105',
     tel: '13512341234',
-    start_time: '2024/07/18T08:00:00Z',
-    end_time: '2024/07/19T17:00:00Z',
+    start_time: '2024/07/18 08:00:00',
+    end_time: '2024/07/19 17:00:00',
     leave_days: 2,
     reason: 'Urgent personal matter',
     state: LeaveRequestState.Pending,
-    create_time: '2024/07/10T09:00:00Z',
-    update_time: '2024/07/10T09:00:00Z'
+    create_time: '2024/07/10 09:00:00',
+    update_time: '2024/07/10 09:00:00'
   }
 ]
